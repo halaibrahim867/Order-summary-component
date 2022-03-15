@@ -9,6 +9,9 @@ body{
    /*font-family: 'Red Hat Display', sans-serif;*/
     font-family: 'Work Sans', sans-serif;
 }
+:root{
+    --main-color:hsl(223, 47%, 23%);
+}
 @media (max-width:1440px)
 {
 .parent{
@@ -39,6 +42,7 @@ body{
 }
 .parent .child h3 {
     font-weight: 900;
+    color: var(--main-color);
 }
 .parent .child h3+p {
     font-weight: 500;
@@ -58,6 +62,7 @@ body{
 }
 .audio .part_1 h3 {
     margin-bottom: 0;
+    color: var(--main-color);
 }
 .audio span {
     margin-top: 10px;
@@ -69,8 +74,26 @@ body{
 .audio .part_2 a{
     justify-items: flex-end;
     text-decoration: none;
+    color: hsl(225deg 56% 48%);
  
 }
 .part_2 {
     justify-content: center;
+}
+button{
+    width: 291px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(225deg 56% 48%);
+}
+.cancel  {
+    margin-top: 50px;
+
+}
+.cancel a {
+    text-decoration: none;
+    color:hsl(223, 47%, 23%);
+    font-weight:600 ;
+
 }
