@@ -75,21 +75,23 @@ body{
     justify-items: flex-end;
     text-decoration: none;
     color: hsl(225deg 56% 48%);
- 
+    font-weight: 600;
 }
 .part_2 {
     justify-content: center;
 }
 button{
+    font-weight: 600;
+    font-size: 15px;
     width: 291px;
     padding: 15px;
     border-radius: 10px;
     border: none;
     background-color: hsl(225deg 56% 48%);
+    color: hsl(225, 100%, 94%);
 }
 .cancel  {
     margin-top: 50px;
-
 }
 .cancel a {
     text-decoration: none;
