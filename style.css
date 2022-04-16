@@ -4,13 +4,14 @@
     box-sizing: border-box;
 }
 body{
-  /*  font-family: 'Jomhuria', cursive;*/
     font-family: 'Outfit', sans-serif;
-   /*font-family: 'Red Hat Display', sans-serif;*/
     font-family: 'Work Sans', sans-serif;
+    margin:0;
+    padding: 0;
 }
 :root{
     --main-color:hsl(223, 47%, 23%);
+    --second-color:hsl(224, 23%, 55%);
 }
 @media (max-width:1440px)
 {
@@ -18,7 +19,7 @@ body{
     background: url(pattern-background-desktop.svg),
      hsl(225, 100%, 94%);
     background-repeat: no-repeat;
-    height: 900px;
+    height: 100vh;
     position: relative;
 }
 }
@@ -32,13 +33,11 @@ body{
     position: absolute;
     text-align: center;
     border-radius: 15px;
-
 }
 .parent .child .main_image{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 430px;
-
 }
 .parent .child h3 {
     font-weight: 900;
@@ -69,13 +68,15 @@ body{
 }
 .part_1 p{
     margin-left: 70px;
-    margin-top: 0;
+    margin-top: -10px;
 }
 .audio .part_2 a{
     justify-items: flex-end;
-    text-decoration: none;
     color: hsl(225deg 56% 48%);
     font-weight: 600;
+}
+.audio .part_2 a:hover{
+    color: var(--second-color);
 }
 .part_2 {
     justify-content: center;
@@ -89,13 +90,21 @@ button{
     border: none;
     background-color: hsl(225deg 56% 48%);
     color: hsl(225, 100%, 94%);
+    box-shadow: 0px 10px 15px #bec2cd;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: var(--second-color);
 }
 .cancel  {
     margin-top: 50px;
 }
 .cancel a {
     text-decoration: none;
-    color:hsl(223, 47%, 23%);
+    color:var(--second-color);
     font-weight:600 ;
-
+}
+.cancel a:hover{
+    color: var(--main-color);
 }
